@@ -80,5 +80,4 @@ This component takes a binary instruction from the M1 Memory. And depending on w
 
 # What I learned
 
-
-    
+While this was very difficult to execute. It taught me a lot about how the basis of computing. While coding in any other language like Python or C++, it helps me understand what is going on inside of a computer and within its memory. Such as variable addition or even when using pointers/arrays.
