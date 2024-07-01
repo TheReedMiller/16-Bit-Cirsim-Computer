@@ -13,6 +13,6 @@ After uploading the collowing machine code to the M1 memory bank. My ciruit woul
 
 The result will be r0:0008 shown within the R component (Register)
 
-#Decoder
+# Decoder
 
     
