@@ -2,6 +2,12 @@
 ![16-Bit-Computer](https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/d76dfa85-a093-4c33-b695-6e8722d19df8)
  This is a 16 Bit Computer, build withing the Framework of the Cirsim Circuitry software. Given Machine code for Compiled ARM64 code. This computer-circuit will execute those commands. Below I will explain what each image, and circuitry component is responsible for.
 
+ # Register
+
+ <img width="132" alt="Register" src="https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/634dd0be-724d-4005-8d9a-3fc5358469cb">
+
+This is the Register Component of the Circuit. It is responsible for storing data/values that we provide it. At a basic level, this component is made up of Finite State Machines (FSM) which can be used to store bits in a circuit.
+
  # M1 - Memory Bank
  ![M1-MemoryBank](https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/52ce8ca0-9474-4dc6-80a9-d30c7d72fd2e)
  
@@ -30,14 +36,26 @@ The result will be r0:0008 shown within the R component (Register)
 
 ![R0](https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/a9b18c30-3041-4d8c-b6da-390b7f3ea8c1)
 
-# Fields
-This component is featured in both the "Decoder" and "Read/Write" images/components. 
 
-This circuitry compenent receives 16-bits of binary code. This code represents a specific instruction that the computer wants to perform. This component
+# Fields
+
+![Fields](https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/b4ab31cb-73e6-40ac-85b5-2a20be71a441)
+
+This component is featured in both the "Decoder" and "Read/Write(rw)" components. 
+
+This circuitry compenent receives 16-bits of binary code as Input. This code represents a specific instruction that the computer wants to perform. This component's main fuction, is to split this instruction code into spefic "Fields" (Hence the name). For Example: The top 3-bits (13,14,15) are directed into the output F. This tells our circuit what Type of instruction it is, which later on tells our circuit to select specific outputs from this. If these bits are 000, this is a Format 2 opperation, and will result in an Add/Subtract result. So only the required fields for those opperations will be used, others will be ignored.
+
+# Read/Write(rw)
+
+![Read:Write](https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/cc2120d8-0ba9-446d-959a-9c6d63e79a80)
+
+This is a Simple component used within the "Decoder" component, its purpose is to tell our Register-Circuit when it should Write to a register, and when it should read from one.
 
 # Decoder
 
-This component is shown in the Top-Left of the "16-Bit-Computer" image, and the detailed circuitry behind it is shown in the "Decoder" image.
+![Decoder](https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/eeb04ddd-0636-4382-9007-74312cfecc24)
+
+This component is shown in the Top-Left of the "16-Bit-Computer" image, and this is the detailed circuitry behind it.
 
 This component takes a binary instruction from the
     
