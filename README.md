@@ -1,6 +1,10 @@
 # 16-Bit-Cirsim-Computer
 ![16-Bit-Computer](https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/d76dfa85-a093-4c33-b695-6e8722d19df8)
- This is a 16 Bit Computer, build withing the Framework of the Cirsim Circuitry software. By accessing the M1 Memory Bank within this ciruit. I was able to upload Machine Code (Hex), that instructed this computer to execute dasks just as a ARM64 compiler + 16 Bit Computer would. 
+ This is a 16 Bit Computer, build withing the Framework of the Cirsim Circuitry software. Given Machine code for Compiled ARM64 code. This computer-circuit will execute those commands. Below I will explain what each image, and circuitry component is responsible for.
+
+ 
+ 
+ By accessing the M1 Memory Bank within this ciruit. I was able to upload Machine Code (Hex), that instructed this computer to execute dasks just as a ARM64 compiler + 16 Bit Computer would. 
 
  For Example:
  If I was to compile the following ARM64 code
@@ -14,7 +18,6 @@ After uploading the collowing machine code to the M1 memory bank. My ciruit woul
 
 The result will be r0:0008 shown within the R component (Register)
 
-Below I will explain what each image, and circuitry component is responsible for.
 
 # Fields
 This component is featured in both the "Decoder" and "Read/Write" images/components. 
