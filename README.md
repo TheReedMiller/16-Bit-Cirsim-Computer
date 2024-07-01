@@ -4,6 +4,7 @@
 
  # M1 - Memory Bank
  ![M1-MemoryBank](https://github.com/TheReedMiller/16-Bit-Cirsim-Computer/assets/174283892/52ce8ca0-9474-4dc6-80a9-d30c7d72fd2e)
+ 
  This image shows the input to the M1 component of the Circuit. By accessing this you are able to upload Machine Code (Hex), that instructs the computer to execute dasks just as a ARM64 compiler would.
 
  For Example:
